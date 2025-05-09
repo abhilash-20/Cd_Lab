@@ -46,7 +46,7 @@ void yyerror(const char *s){
 }
 
 int main(){
-	printf("ENter an arithmetic expression:\n");
+	printf("Enter an arithmetic expression:\n");
 	yyparse();
 	return 0;
 }

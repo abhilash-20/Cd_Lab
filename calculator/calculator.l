@@ -4,7 +4,7 @@
 
 %%
 [ \t]		; 		//ignore whitespaces
-[0-9]+		{ yylval = atoi(yytext); return NUMBER; }
+[0-9]+		{ yylval = atoi(yytext); return NUMBER; } //atoi: converts string to integer. yytext is the global variable provided by lex.
 "+"		return '+';
 "-"		return '-';
 "*"		return '*';

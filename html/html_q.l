@@ -10,7 +10,7 @@
 
 \<[a-zA-Z0-9]*               { printf("Invalid tag: %s (missing '>')\n", yytext); }
 
-.|\n                        ; // Ignore everything else
+.                        ; // Ignore everything else
 
 %%
 
